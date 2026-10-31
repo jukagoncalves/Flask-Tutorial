@@ -4,9 +4,19 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    is_logged_in = False
-    marks = 40
-    return render_template("index.html", is_logged_in=is_logged_in, marks=marks)
+    courses = [
+        "Python",
+        "Flask",
+        "FastAPI",
+        "Django"
+    ]
+
+    student = {
+        "name":"Juka",
+        "course":"Flask",
+        "city":"SSP"
+    }
+    return render_template("index.html", courses=courses,student=student)
 
 if __name__ == "__main__":
     app.run(debug=True)
