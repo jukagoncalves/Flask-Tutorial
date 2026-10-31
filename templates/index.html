@@ -1,9 +1,19 @@
 <!DOCTYPE html>
 <html>
+<head>  
+    <title> Hello World Page</title>
+</head>
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+{# <p>{{"Welcome "+ first_name}}</p> #}
+<h2>{{first_name}} {{last_name}}</h2>
+<h2>{{first_name | upper}}</h2>
+<h2>{{first_name | lower}}</h2>
+<h2>Total Course: {{course | length}}</h2>
+<h2>City: {{city}}</h2>
+<h2>Original Price: {{price}}</h2>
+<h2>GST Included Price: {{price + 90}}</h2>
+<p>{{10*20}}</p>
 
 </body>
 </html>
